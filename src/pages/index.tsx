@@ -16,7 +16,7 @@ interface Iproduct {
 
 
 const Home = ({product}:Iproduct)=> {
-  console.log(product)
+
   return (
    <>
     <Head>
@@ -60,8 +60,6 @@ const ObjectProduct = await stripe.products.list({
     name: item.name,
     descriptin: item.description,
   })})
-
-console.log(product)
   return {
   props:{
     product,
