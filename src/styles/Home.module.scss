@@ -27,22 +27,22 @@
 
     box-shadow: 1px 1px 5px #0000001f;
 
-    transition: background-color 0.3s;
 
-    &:hover {
-        background-color: var(--ciano-500);
-
-    }
-
-
-
-    img{
-        border-radius: 5px;
-        height: 250px;
-        width: 150px;
-    }
-    
 }
+.Curchase{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img{
+    border-radius: 5px;
+    height: 250px;
+    width: 150px;
+}
+
+
+
 .boxtext{
     width: 150px; 
     h2 {
@@ -51,12 +51,10 @@
         margin: 0 5px;
         
     }
-
-    span{
-        display: none;
-        font-size: 0.6rem;
-        color: var(--gray-400);
-        margin: 0 5px;
-    }
-
+}
+.description{
+    display: none;
+    font-size: 0.6rem;
+    color: var(--gray-400);
+    margin: 0 5px;
 }

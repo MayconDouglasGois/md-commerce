@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsFillCartFill,BsFillBagFill } from "react-icons/bs";
 import style from './style.module.scss'
 
 
@@ -14,7 +15,14 @@ const Home = () => {
 
         <nav>
         <a href="#" className={style.active}>Home</a>
-        <a href="#">contato</a>
+        <a href="#">
+          <BsFillCartFill/>
+          <span> Carrinho</span>
+        </a>
+        <a href="#">
+          <BsFillBagFill/>
+        <span> Pedidos</span>
+        </a>
         </nav>
 
 

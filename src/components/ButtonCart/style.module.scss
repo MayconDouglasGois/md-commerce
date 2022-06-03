@@ -1,0 +1,16 @@
+.container {
+        width: 2.5rem;
+        height: 1.6rem;
+        border-radius: 1rem;
+        border: none;
+        background-color: var(--gray-300);
+        transition: filter 0.3s;
+
+
+        &:hover{
+            filter: brightness(0.8);
+        }
+
+
+ 
+}
