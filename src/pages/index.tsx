@@ -39,7 +39,7 @@ const Home = ({product}:Iproduct)=> {
               <h2>{item.name}</h2>
               <div className={style.Curchase}>
                 <ButtonCurchase/>
-                <ButtonCart/>
+                <ButtonCart checkCurchase={false}/>
               </div>
               <span className={style.description}>{item.descriptin}</span>
             </div>
