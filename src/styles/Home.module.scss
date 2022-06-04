@@ -10,7 +10,7 @@
 }
 .container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
 
@@ -54,9 +54,29 @@
     }
 }
 .description{
-    display: none;
+    margin:5px;
+
+    display: block;
+
+
+    height: 2rem;
+    overflow-y: scroll;
+
     font-size: 0.6rem;
     color: var(--gray-400);
-    margin: 0 5px;
+    
+    animation-name: slide;
+    animation-duration: .3s;
    
+    // &:hover{
+    //     animation-name: slide;
+    //     animation-duration: .3s;
+    //     animation-fill-mode: forwards;
+    // }
 }
+
+// @keyframes slide {
+//     to{
+//         height:5rem;
+//     }
+// }
