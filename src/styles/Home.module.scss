@@ -1,13 +1,11 @@
 .product{
-    margin-top: 7rem;
-    padding-top: 2rem;
-
-    
+    padding-top: 6rem;
+    height: 100vh;
 
     h1{
         font-size: 2rem;
-        text-align: center;
         margin: 1rem;
+        text-align: center;
     }
 }
 .container{
@@ -44,12 +42,15 @@
 
 
 .boxtext{
+    margin-top: 0.5rem;
     width: 150px; 
-    h2 {
+   
+    h2{
         display: block;
         font-size: 0.8rem;
         margin: 0 5px;
         
+
     }
 }
 .description{
@@ -57,4 +58,5 @@
     font-size: 0.6rem;
     color: var(--gray-400);
     margin: 0 5px;
+   
 }

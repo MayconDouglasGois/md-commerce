@@ -7,6 +7,7 @@ interface IcheckCurchase {
 }
 
 const ButtonCart = ({checkCurchase}: IcheckCurchase) => {
+
   if (checkCurchase){
     return (
       <button className={style.container}>
