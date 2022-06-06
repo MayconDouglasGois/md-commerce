@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsFillCartFill,BsFillBagFill } from "react-icons/bs";
+import {GiTShirt} from "react-icons/gi"
 import style from './style.module.scss'
 
 
@@ -14,7 +15,10 @@ const Home = () => {
         />
 
         <nav>
-        <a href="#" className={style.active}>Home</a>
+        <a href="#" className={style.active}>
+          <GiTShirt/>
+          Home
+          </a>
         <a href="#">
           <BsFillCartFill/>
           <span> Carrinho</span>

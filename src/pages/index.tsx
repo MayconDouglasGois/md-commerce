@@ -7,7 +7,6 @@ import Stripe from "stripe"
 
 import ButtonCart from "../components/ButtonCart"
 import ButtonCurchase from "../components/ButtonCurchase"
-import {AiFillCaretDown, AiFillCaretUp} from 'react-icons/ai'
 
 import style from "../styles/Home.module.scss"
 
@@ -40,7 +39,6 @@ const Home = ({product}:Iproduct)=> (
 
 
           {product.map((item) => {
-            // const [visible, setVisible] = React.useState(true)
 
 
             return (
@@ -54,13 +52,12 @@ const Home = ({product}:Iproduct)=> (
                   <h2>{item.name}</h2>
 
                   <div className={style.Curchase}>
-                    <ButtonCurchase />
-                    <ButtonCart checkCurchase={false} />
+                    <ButtonCurchase/>
+                    <ButtonCart keyItem={item.id}/>
                   </div>
                   
                   <span className={style.description}>{item.descriptin}</span>
-                  {/* <button onClick={() => { setVisible(!visible) } }>{visible ? <AiFillCaretUp /> : <AiFillCaretDown />}</button> */}
-                
+              
                 </div>
               </div>
             )
