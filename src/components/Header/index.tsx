@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsFillCartFill,BsFillBagFill } from "react-icons/bs";
 import {GiTShirt} from "react-icons/gi"
+import SingInButton from '../SingInButton';
 import style from './style.module.scss'
 
 
@@ -27,6 +28,7 @@ const Home = () => {
           <BsFillBagFill/>
         <span> Pedidos</span>
         </a>
+        <SingInButton/>
         </nav>
 
 
