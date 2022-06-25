@@ -28,10 +28,8 @@ const Home = () => {
           <BsFillBagFill/>
         <span> Pedidos</span>
         </a>
-        <SingInButton/>
         </nav>
-
-
+        <nav><SingInButton/></nav>
         </header>
     </div>
   )

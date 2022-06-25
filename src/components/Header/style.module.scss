@@ -24,16 +24,18 @@
         width:5rem;
         height:5rem;
     }
-
     nav{
         margin-right: 0.5rem;
-        height: 6rem;
         
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
+        
 
+        button{
+            margin: 5px;
+        }
 
 
         a{
