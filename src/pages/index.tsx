@@ -51,7 +51,7 @@ const Home = ({product}:Iproduct)=> (
                   <h2>{item.price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h2>
                   <h2>{item.name}</h2>
                   <div className={style.Curchase}>
-                    <ButtonCurchase/>
+                    <ButtonCurchase priceId={item.id}/>
                    
                     <ButtonCart keyItem={item.id}/>
                   </div>
@@ -75,13 +75,15 @@ const Home = ({product}:Iproduct)=> (
 
 export const getServerSideProps:GetServerSideProps =async ()=> {
 
+
+
   const ObjectProduct = await stripe.prices.list({
     limit: 6,
-    expand:["data.product",]
+    expand:["data.product"]
   });
-    console.log(ObjectProduct)
 
     const product= ObjectProduct.data.map((item: Stripe.Price)=>{
+  
       return (
         {
           id: item.id,
