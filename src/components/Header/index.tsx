@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsFillCartFill} from "react-icons/bs";
+// import { BsFillCartFill} from "react-icons/bs";
 import {GiTShirt} from "react-icons/gi"
 import SingInButton from '../SingInButton';
 import style from './style.module.scss'
@@ -20,10 +20,10 @@ const Home = () => {
           <GiTShirt/>
           Home
           </a>
-        <a href="#">
+        {/* <a href="#">
           <BsFillCartFill/>
           <span> Carrinho</span>
-        </a>
+        </a> */}
         </nav>
         <nav><SingInButton/></nav>
         </header>
