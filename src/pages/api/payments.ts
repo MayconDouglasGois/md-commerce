@@ -24,7 +24,6 @@ interface Isession {
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method) {
     const priceId = req.body
-    console.log(priceId)
     const session = await getSession({req});
     const email  = session?.user?.email
 
